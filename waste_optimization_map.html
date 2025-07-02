@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e = L.map(
+                "map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e",
+                {
+                    center: [41.3851, 2.1734],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cd9b8c3dc61c6ec379c22b96f0f0c3c4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cd9b8c3dc61c6ec379c22b96f0f0c3c4.addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+            var circle_marker_c6461542c131440932b504b94122b2fe = L.circleMarker(
+                [41.41394267984579, 2.1037516132834],
+                {"bubblingMouseEvents": true, "color": "#798500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#798500", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_10f6a1dde78096e7ad3e5ee61d2446ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e465209e0c6d61de2b0a1a3a74df68e = $(`<div id="html_9e465209e0c6d61de2b0a1a3a74df68e" style="width: 100.0%; height: 100.0%;">         <b>Hotel Barcelona Palace</b><br>         Total Forecasted Waste: 7,311 kg<br>         ID: P01         </div>`)[0];
+                popup_10f6a1dde78096e7ad3e5ee61d2446ab.setContent(html_9e465209e0c6d61de2b0a1a3a74df68e);
+            
+        
+
+        circle_marker_c6461542c131440932b504b94122b2fe.bindPopup(popup_10f6a1dde78096e7ad3e5ee61d2446ab)
+        ;
+
+        
+    
+    
+            var circle_marker_d6be8cba1b4f7933b2f6d2b19f3bf26b = L.circleMarker(
+                [41.377502931836915, 2.1334816107223236],
+                {"bubblingMouseEvents": true, "color": "#d62800", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d62800", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_f0a57bdc1e2d0ba910e033bf60c45041 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_787d8a47951b86371dbe82494d69b39f = $(`<div id="html_787d8a47951b86371dbe82494d69b39f" style="width: 100.0%; height: 100.0%;">         <b>Restaurant La Rambla</b><br>         Total Forecasted Waste: 2,244 kg<br>         ID: P02         </div>`)[0];
+                popup_f0a57bdc1e2d0ba910e033bf60c45041.setContent(html_787d8a47951b86371dbe82494d69b39f);
+            
+        
+
+        circle_marker_d6be8cba1b4f7933b2f6d2b19f3bf26b.bindPopup(popup_f0a57bdc1e2d0ba910e033bf60c45041)
+        ;
+
+        
+    
+    
+            var circle_marker_53f7785c933bbe343d6506bfbf71d9d7 = L.circleMarker(
+                [41.4236471214164, 2.2015049231134367],
+                {"bubblingMouseEvents": true, "color": "#e81600", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e81600", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_83de91ba306a50951e427220773b9be5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3ec18300386a2be807135a7f941e4f5 = $(`<div id="html_d3ec18300386a2be807135a7f941e4f5" style="width: 100.0%; height: 100.0%;">         <b>Hotel Gothic Quarter</b><br>         Total Forecasted Waste: 1,230 kg<br>         ID: P03         </div>`)[0];
+                popup_83de91ba306a50951e427220773b9be5.setContent(html_d3ec18300386a2be807135a7f941e4f5);
+            
+        
+
+        circle_marker_53f7785c933bbe343d6506bfbf71d9d7.bindPopup(popup_83de91ba306a50951e427220773b9be5)
+        ;
+
+        
+    
+    
+            var circle_marker_e9dc8865998b67f2771175ff0105bf25 = L.circleMarker(
+                [41.439217956770484, 2.1130408248944126],
+                {"bubblingMouseEvents": true, "color": "#dd2100", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dd2100", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_e511e51b4b2239ebae034a40a89c74a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef9611b5e7426327f6be2e27b09aa0a8 = $(`<div id="html_ef9611b5e7426327f6be2e27b09aa0a8" style="width: 100.0%; height: 100.0%;">         <b>Cafe Central</b><br>         Total Forecasted Waste: 1,842 kg<br>         ID: P04         </div>`)[0];
+                popup_e511e51b4b2239ebae034a40a89c74a5.setContent(html_ef9611b5e7426327f6be2e27b09aa0a8);
+            
+        
+
+        circle_marker_e9dc8865998b67f2771175ff0105bf25.bindPopup(popup_e511e51b4b2239ebae034a40a89c74a5)
+        ;
+
+        
+    
+    
+            var circle_marker_628ed344d3530cada0e926104cc7d5ad = L.circleMarker(
+                [41.39219218196853, 2.1044695829157107],
+                {"bubblingMouseEvents": true, "color": "#00ff00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ff00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_c64a0ecca6c57c3eaf2aa548f52daa88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e22a68b4d0300a7abc092ff7ff7774ed = $(`<div id="html_e22a68b4d0300a7abc092ff7ff7774ed" style="width: 100.0%; height: 100.0%;">         <b>Hotel Beachfront</b><br>         Total Forecasted Waste: 13,970 kg<br>         ID: P05         </div>`)[0];
+                popup_c64a0ecca6c57c3eaf2aa548f52daa88.setContent(html_e22a68b4d0300a7abc092ff7ff7774ed);
+            
+        
+
+        circle_marker_628ed344d3530cada0e926104cc7d5ad.bindPopup(popup_c64a0ecca6c57c3eaf2aa548f52daa88)
+        ;
+
+        
+    
+    
+            var circle_marker_21cd189d73537471b139d5444aa8b34a = L.circleMarker(
+                [41.371863797480366, 2.1758032932155045],
+                {"bubblingMouseEvents": true, "color": "#ce3000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ce3000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_860842f23539268aa30090e113051fab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_506d2fdf5d2048284c8fb32fa0ba5000 = $(`<div id="html_506d2fdf5d2048284c8fb32fa0ba5000" style="width: 100.0%; height: 100.0%;">         <b>Restaurant Port Vell</b><br>         Total Forecasted Waste: 2,648 kg<br>         ID: P06         </div>`)[0];
+                popup_860842f23539268aa30090e113051fab.setContent(html_506d2fdf5d2048284c8fb32fa0ba5000);
+            
+        
+
+        circle_marker_21cd189d73537471b139d5444aa8b34a.bindPopup(popup_860842f23539268aa30090e113051fab)
+        ;
+
+        
+    
+    
+            var circle_marker_ca25496588e65a654e6ac9b9d94c3048 = L.circleMarker(
+                [41.35265359696839, 2.1298256476029973],
+                {"bubblingMouseEvents": true, "color": "#a05e00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a05e00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_fbbdd174eca89362191e16544bd618d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aeded68a7f7e0bf0c83c0d29ed8f1023 = $(`<div id="html_aeded68a7f7e0bf0c83c0d29ed8f1023" style="width: 100.0%; height: 100.0%;">         <b>Hotel Eixample</b><br>         Total Forecasted Waste: 5,191 kg<br>         ID: P07         </div>`)[0];
+                popup_fbbdd174eca89362191e16544bd618d6.setContent(html_aeded68a7f7e0bf0c83c0d29ed8f1023);
+            
+        
+
+        circle_marker_ca25496588e65a654e6ac9b9d94c3048.bindPopup(popup_fbbdd174eca89362191e16544bd618d6)
+        ;
+
+        
+    
+    
+            var circle_marker_5bbfc9eedb7e35aa13097ecd1b0f0f00 = L.circleMarker(
+                [41.41498844377796, 2.1817412220904826],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_fb8242a25002ca9bdbc9fef044fd2511 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee60b11a55bd02879239c9ae90a90699 = $(`<div id="html_ee60b11a55bd02879239c9ae90a90699" style="width: 100.0%; height: 100.0%;">         <b>Cafe Gracia</b><br>         Total Forecasted Waste: 0 kg<br>         ID: P08         </div>`)[0];
+                popup_fb8242a25002ca9bdbc9fef044fd2511.setContent(html_ee60b11a55bd02879239c9ae90a90699);
+            
+        
+
+        circle_marker_5bbfc9eedb7e35aa13097ecd1b0f0f00.bindPopup(popup_fb8242a25002ca9bdbc9fef044fd2511)
+        ;
+
+        
+    
+    
+            var circle_marker_988fccf56bcba2851339f2d6294c7460 = L.circleMarker(
+                [41.37204406220407, 2.1883898525813863],
+                {"bubblingMouseEvents": true, "color": "#c33b00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c33b00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_99fc85550698b9d5618b6a9e944bc184 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0d11cf81ca07078b2cef6619490b595 = $(`<div id="html_a0d11cf81ca07078b2cef6619490b595" style="width: 100.0%; height: 100.0%;">         <b>Hotel Montjuic</b><br>         Total Forecasted Waste: 3,263 kg<br>         ID: P09         </div>`)[0];
+                popup_99fc85550698b9d5618b6a9e944bc184.setContent(html_a0d11cf81ca07078b2cef6619490b595);
+            
+        
+
+        circle_marker_988fccf56bcba2851339f2d6294c7460.bindPopup(popup_99fc85550698b9d5618b6a9e944bc184)
+        ;
+
+        
+    
+    
+            var circle_marker_f41aac2fd5214daa76c72cc986b77dab = L.circleMarker(
+                [41.43094304566779, 2.100974813951709],
+                {"bubblingMouseEvents": true, "color": "#c03e00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c03e00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_03a85c95148d3da94806393aeb5d7519 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5550d2e0a1afed0ac65b599ed571bc57 = $(`<div id="html_5550d2e0a1afed0ac65b599ed571bc57" style="width: 100.0%; height: 100.0%;">         <b>Restaurant Born</b><br>         Total Forecasted Waste: 3,407 kg<br>         ID: P10         </div>`)[0];
+                popup_03a85c95148d3da94806393aeb5d7519.setContent(html_5550d2e0a1afed0ac65b599ed571bc57);
+            
+        
+
+        circle_marker_f41aac2fd5214daa76c72cc986b77dab.bindPopup(popup_03a85c95148d3da94806393aeb5d7519)
+        ;
+
+        
+    
+    
+            var circle_marker_825b83e37de5aed5db98a03335bdc662 = L.circleMarker(
+                [41.43058192518328, 2.204720909248234],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.573999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_ee97bf27f47806fb772d61d6a186e420 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01c1e5ee1140d5ada63e481c5a98b3b7 = $(`<div id="html_01c1e5ee1140d5ada63e481c5a98b3b7" style="width: 100.0%; height: 100.0%;">         <b>Central Waste Processing Plant</b><br>         Capacity: 10,574 kg/month<br>         ID: PR01         </div>`)[0];
+                popup_ee97bf27f47806fb772d61d6a186e420.setContent(html_01c1e5ee1140d5ada63e481c5a98b3b7);
+            
+        
+
+        circle_marker_825b83e37de5aed5db98a03335bdc662.bindPopup(popup_ee97bf27f47806fb772d61d6a186e420)
+        ;
+
+        
+    
+    
+            var circle_marker_b284a93d0efabf7987160f05957b737e = L.circleMarker(
+                [41.377787134167164, 2.1322970643161385],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.514, "stroke": true, "weight": 3}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_b0cab4a617cf596dc46197fcf7d7e641 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d3278f8952106e0b17e7e3ca297316e = $(`<div id="html_9d3278f8952106e0b17e7e3ca297316e" style="width: 100.0%; height: 100.0%;">         <b>Recycling Center North</b><br>         Capacity: 10,514 kg/month<br>         ID: PR02         </div>`)[0];
+                popup_b0cab4a617cf596dc46197fcf7d7e641.setContent(html_9d3278f8952106e0b17e7e3ca297316e);
+            
+        
+
+        circle_marker_b284a93d0efabf7987160f05957b737e.bindPopup(popup_b0cab4a617cf596dc46197fcf7d7e641)
+        ;
+
+        
+    
+    
+            var circle_marker_617acc769e877c06e51b3ec7b4db38a6 = L.circleMarker(
+                [41.36022102765199, 2.1569890950956006],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.881, "stroke": true, "weight": 3}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_4e6347b62508ee86bf29317f542eb7da = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffbf6c486f7c1461292dde175b7d79e0 = $(`<div id="html_ffbf6c486f7c1461292dde175b7d79e0" style="width: 100.0%; height: 100.0%;">         <b>Organic Waste Facility</b><br>         Capacity: 10,881 kg/month<br>         ID: PR03         </div>`)[0];
+                popup_4e6347b62508ee86bf29317f542eb7da.setContent(html_ffbf6c486f7c1461292dde175b7d79e0);
+            
+        
+
+        circle_marker_617acc769e877c06e51b3ec7b4db38a6.bindPopup(popup_4e6347b62508ee86bf29317f542eb7da)
+        ;
+
+        
+    
+    
+            var poly_line_4f0a45099d27b727d44df49161b06955 = L.polyline(
+                [[41.39219218196853, 2.1044695829157107], [41.377787134167164, 2.1322970643161385]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 11.514}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_b82ea21ee23cce37d5223167dae12000 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5073b3cdc14a4ea6fb292622db00b6b9 = $(`<div id="html_5073b3cdc14a4ea6fb292622db00b6b9" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Hotel Beachfront → Recycling Center North<br>             Waste Type: organic<br>             Volume: 10,514 kg<br>             Distance: 2.8 km<br>             Cost: €59,298.96             </div>`)[0];
+                popup_b82ea21ee23cce37d5223167dae12000.setContent(html_5073b3cdc14a4ea6fb292622db00b6b9);
+            
+        
+
+        poly_line_4f0a45099d27b727d44df49161b06955.bindPopup(popup_b82ea21ee23cce37d5223167dae12000)
+        ;
+
+        
+    
+    
+            var poly_line_2819c38688c3087fe1156f315513867c = L.polyline(
+                [[41.39219218196853, 2.1044695829157107], [41.36022102765199, 2.1569890950956006]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3.33}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_0a5b6c5e03faf908317b28f7d1e02730 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b317ac63537e8ec1441fbdd9989ea815 = $(`<div id="html_b317ac63537e8ec1441fbdd9989ea815" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Hotel Beachfront → Organic Waste Facility<br>             Waste Type: organic<br>             Volume: 2,330 kg<br>             Distance: 5.6 km<br>             Cost: €26,305.70             </div>`)[0];
+                popup_0a5b6c5e03faf908317b28f7d1e02730.setContent(html_b317ac63537e8ec1441fbdd9989ea815);
+            
+        
+
+        poly_line_2819c38688c3087fe1156f315513867c.bindPopup(popup_0a5b6c5e03faf908317b28f7d1e02730)
+        ;
+
+        
+    
+    
+            var poly_line_e11852c4ef46621e1ca091f59cd74ff9 = L.polyline(
+                [[41.41394267984579, 2.1037516132834], [41.36022102765199, 2.1569890950956006]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 6.993}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_61e293f96b4549bba5728abf57ff250d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b33d0692eff2881df2e405e16017c0b0 = $(`<div id="html_b33d0692eff2881df2e405e16017c0b0" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Hotel Barcelona Palace → Organic Waste Facility<br>             Waste Type: organic<br>             Volume: 5,993 kg<br>             Distance: 7.4 km<br>             Cost: €89,235.77             </div>`)[0];
+                popup_61e293f96b4549bba5728abf57ff250d.setContent(html_b33d0692eff2881df2e405e16017c0b0);
+            
+        
+
+        poly_line_e11852c4ef46621e1ca091f59cd74ff9.bindPopup(popup_61e293f96b4549bba5728abf57ff250d)
+        ;
+
+        
+    
+    
+            var poly_line_578538fc6e43e5a6c5c9718ad3b58603 = L.polyline(
+                [[41.37204406220407, 2.1883898525813863], [41.36022102765199, 2.1569890950956006]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.435}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_5a8d62f49a70cd732121d87fc4afd34c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_925a9329b7c3a7b8d66a3a64cd8e398a = $(`<div id="html_925a9329b7c3a7b8d66a3a64cd8e398a" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Hotel Montjuic → Organic Waste Facility<br>             Waste Type: organic<br>             Volume: 1,435 kg<br>             Distance: 2.9 km<br>             Cost: €8,409.10             </div>`)[0];
+                popup_5a8d62f49a70cd732121d87fc4afd34c.setContent(html_925a9329b7c3a7b8d66a3a64cd8e398a);
+            
+        
+
+        poly_line_578538fc6e43e5a6c5c9718ad3b58603.bindPopup(popup_5a8d62f49a70cd732121d87fc4afd34c)
+        ;
+
+        
+    
+    
+            var poly_line_2eee713ba2508680676fb21dd93e670d = L.polyline(
+                [[41.439217956770484, 2.1130408248944126], [41.43058192518328, 2.204720909248234]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.407}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_409fe75c318437dfbed8d1366ccc9951 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f659f00bf6ab7f10d6ff579fb572a618 = $(`<div id="html_f659f00bf6ab7f10d6ff579fb572a618" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Cafe Central → Central Waste Processing Plant<br>             Waste Type: organic<br>             Volume: 1,407 kg<br>             Distance: 7.7 km<br>             Cost: €21,681.87             </div>`)[0];
+                popup_409fe75c318437dfbed8d1366ccc9951.setContent(html_f659f00bf6ab7f10d6ff579fb572a618);
+            
+        
+
+        poly_line_2eee713ba2508680676fb21dd93e670d.bindPopup(popup_409fe75c318437dfbed8d1366ccc9951)
+        ;
+
+        
+    
+    
+            var poly_line_9f0c2b7491d0a1f3b4179f97df9b21a1 = L.polyline(
+                [[41.377502931836915, 2.1334816107223236], [41.36022102765199, 2.1569890950956006]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.833}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_95d0034cb5129675d9e1797624b538aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65ca16e4f8766df6ce6fa7478c15af68 = $(`<div id="html_65ca16e4f8766df6ce6fa7478c15af68" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Restaurant La Rambla → Organic Waste Facility<br>             Waste Type: organic<br>             Volume: 833 kg<br>             Distance: 2.8 km<br>             Cost: €4,573.17             </div>`)[0];
+                popup_95d0034cb5129675d9e1797624b538aa.setContent(html_65ca16e4f8766df6ce6fa7478c15af68);
+            
+        
+
+        poly_line_9f0c2b7491d0a1f3b4179f97df9b21a1.bindPopup(popup_95d0034cb5129675d9e1797624b538aa)
+        ;
+
+        
+    
+    
+            var poly_line_5a3f9501e86b6353c4f56c907fda1670 = L.polyline(
+                [[41.4236471214164, 2.2015049231134367], [41.43058192518328, 2.204720909248234]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.576}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_c49a61da592e8b95d6909bc8c7280ac1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d4ae09b82795af76db6e8fda4c40d2b = $(`<div id="html_2d4ae09b82795af76db6e8fda4c40d2b" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Hotel Gothic Quarter → Central Waste Processing Plant<br>             Waste Type: organic<br>             Volume: 576 kg<br>             Distance: 0.8 km<br>             Cost: €938.88             </div>`)[0];
+                popup_c49a61da592e8b95d6909bc8c7280ac1.setContent(html_2d4ae09b82795af76db6e8fda4c40d2b);
+            
+        
+
+        poly_line_5a3f9501e86b6353c4f56c907fda1670.bindPopup(popup_c49a61da592e8b95d6909bc8c7280ac1)
+        ;
+
+        
+    
+    
+            var poly_line_5f900c42b7f4f49383dd1c5d63f12a60 = L.polyline(
+                [[41.35265359696839, 2.1298256476029973], [41.36022102765199, 2.1569890950956006]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.29}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_5839e83eeb776d94afe0a447d3239a7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04ef9884cfcc1f8b96ea7b059af5bc53 = $(`<div id="html_04ef9884cfcc1f8b96ea7b059af5bc53" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Hotel Eixample → Organic Waste Facility<br>             Waste Type: organic<br>             Volume: 290 kg<br>             Distance: 2.4 km<br>             Cost: €1,403.60             </div>`)[0];
+                popup_5839e83eeb776d94afe0a447d3239a7d.setContent(html_04ef9884cfcc1f8b96ea7b059af5bc53);
+            
+        
+
+        poly_line_5f900c42b7f4f49383dd1c5d63f12a60.bindPopup(popup_5839e83eeb776d94afe0a447d3239a7d)
+        ;
+
+        
+    
+    
+            var poly_line_12714e55be8cc50a520119e12bb90257 = L.polyline(
+                [[41.35265359696839, 2.1298256476029973], [41.43058192518328, 2.204720909248234]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.117}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_5800e1dfe5daf9e755d8d9778868d1fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56f77840f14ee0b556f7baf2b772c15d = $(`<div id="html_56f77840f14ee0b556f7baf2b772c15d" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Hotel Eixample → Central Waste Processing Plant<br>             Waste Type: organic<br>             Volume: 117 kg<br>             Distance: 10.7 km<br>             Cost: €2,500.29             </div>`)[0];
+                popup_5800e1dfe5daf9e755d8d9778868d1fc.setContent(html_56f77840f14ee0b556f7baf2b772c15d);
+            
+        
+
+        poly_line_12714e55be8cc50a520119e12bb90257.bindPopup(popup_5800e1dfe5daf9e755d8d9778868d1fc)
+        ;
+
+        
+    
+    
+            var poly_line_c180d6e1407b2a90048a39266028a1f4 = L.polyline(
+                [[41.35265359696839, 2.1298256476029973], [41.36022102765199, 2.1569890950956006]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 5.58}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_718013119c425078d1c3a58acdc5b360 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a868bee3a5086c286a7935b553e86e41 = $(`<div id="html_a868bee3a5086c286a7935b553e86e41" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Hotel Eixample → Organic Waste Facility<br>             Waste Type: plastic<br>             Volume: 4,580 kg<br>             Distance: 2.4 km<br>             Cost: €22,167.20             </div>`)[0];
+                popup_718013119c425078d1c3a58acdc5b360.setContent(html_a868bee3a5086c286a7935b553e86e41);
+            
+        
+
+        poly_line_c180d6e1407b2a90048a39266028a1f4.bindPopup(popup_718013119c425078d1c3a58acdc5b360)
+        ;
+
+        
+    
+    
+            var poly_line_b925728b0a224136cb1edf22c1aa6566 = L.polyline(
+                [[41.377502931836915, 2.1334816107223236], [41.377787134167164, 2.1322970643161385]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.411}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_ae2e187200f985719136727d450fd19d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5708ef9d01298f21e0ea9ad05d8c4d3 = $(`<div id="html_c5708ef9d01298f21e0ea9ad05d8c4d3" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Restaurant La Rambla → Recycling Center North<br>             Waste Type: plastic<br>             Volume: 1,411 kg<br>             Distance: 0.1 km<br>             Cost: €296.31             </div>`)[0];
+                popup_ae2e187200f985719136727d450fd19d.setContent(html_c5708ef9d01298f21e0ea9ad05d8c4d3);
+            
+        
+
+        poly_line_b925728b0a224136cb1edf22c1aa6566.bindPopup(popup_ae2e187200f985719136727d450fd19d)
+        ;
+
+        
+    
+    
+            var poly_line_f363998e660d28cc7c25b2c4de476563 = L.polyline(
+                [[41.39219218196853, 2.1044695829157107], [41.377787134167164, 2.1322970643161385]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.126}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_11530b4a59ed184565e75b8fdc939b75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1656ae5d1485645ab4488786d2176f06 = $(`<div id="html_1656ae5d1485645ab4488786d2176f06" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Hotel Beachfront → Recycling Center North<br>             Waste Type: plastic<br>             Volume: 1,126 kg<br>             Distance: 2.8 km<br>             Cost: €6,350.64             </div>`)[0];
+                popup_11530b4a59ed184565e75b8fdc939b75.setContent(html_1656ae5d1485645ab4488786d2176f06);
+            
+        
+
+        poly_line_f363998e660d28cc7c25b2c4de476563.bindPopup(popup_11530b4a59ed184565e75b8fdc939b75)
+        ;
+
+        
+    
+    
+            var poly_line_97344164ba9c755836810e2dd7d6a8f4 = L.polyline(
+                [[41.37204406220407, 2.1883898525813863], [41.36022102765199, 2.1569890950956006]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.951}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_bb0c06b026607072e9e03258e82e9343 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67e103f70e04ad397a006de5f412d12d = $(`<div id="html_67e103f70e04ad397a006de5f412d12d" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Hotel Montjuic → Organic Waste Facility<br>             Waste Type: plastic<br>             Volume: 951 kg<br>             Distance: 2.9 km<br>             Cost: €5,572.86             </div>`)[0];
+                popup_bb0c06b026607072e9e03258e82e9343.setContent(html_67e103f70e04ad397a006de5f412d12d);
+            
+        
+
+        poly_line_97344164ba9c755836810e2dd7d6a8f4.bindPopup(popup_bb0c06b026607072e9e03258e82e9343)
+        ;
+
+        
+    
+    
+            var poly_line_57affff17552d87cc3eb712d0ae136e1 = L.polyline(
+                [[41.4236471214164, 2.2015049231134367], [41.43058192518328, 2.204720909248234]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.525}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_77b5b7845b97c28b5d2c06ebddf9882f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71c082de9e73e5231aad24d4851c5739 = $(`<div id="html_71c082de9e73e5231aad24d4851c5739" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Hotel Gothic Quarter → Central Waste Processing Plant<br>             Waste Type: plastic<br>             Volume: 525 kg<br>             Distance: 0.8 km<br>             Cost: €855.75             </div>`)[0];
+                popup_77b5b7845b97c28b5d2c06ebddf9882f.setContent(html_71c082de9e73e5231aad24d4851c5739);
+            
+        
+
+        poly_line_57affff17552d87cc3eb712d0ae136e1.bindPopup(popup_77b5b7845b97c28b5d2c06ebddf9882f)
+        ;
+
+        
+    
+    
+            var poly_line_b1e1e997dc32b23765e405cdc09a4db0 = L.polyline(
+                [[41.43094304566779, 2.100974813951709], [41.377787134167164, 2.1322970643161385]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 4.407}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_6d13522c40ef3e90c45aaf59ddc98209 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2466235e31768d853bff84007fa296d = $(`<div id="html_a2466235e31768d853bff84007fa296d" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Restaurant Born → Recycling Center North<br>             Waste Type: paper<br>             Volume: 3,407 kg<br>             Distance: 6.5 km<br>             Cost: €44,018.44             </div>`)[0];
+                popup_6d13522c40ef3e90c45aaf59ddc98209.setContent(html_a2466235e31768d853bff84007fa296d);
+            
+        
+
+        poly_line_b1e1e997dc32b23765e405cdc09a4db0.bindPopup(popup_6d13522c40ef3e90c45aaf59ddc98209)
+        ;
+
+        
+    
+    
+            var poly_line_d9de7b38cb464e50bc459d1e34c11a08 = L.polyline(
+                [[41.371863797480366, 2.1758032932155045], [41.36022102765199, 2.1569890950956006]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3.648}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_57c84e548f1b72ada6bb26daf66d9a94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7281b1d97d192d492a12727724baf080 = $(`<div id="html_7281b1d97d192d492a12727724baf080" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Restaurant Port Vell → Organic Waste Facility<br>             Waste Type: paper<br>             Volume: 2,648 kg<br>             Distance: 2.0 km<br>             Cost: €10,777.36             </div>`)[0];
+                popup_57c84e548f1b72ada6bb26daf66d9a94.setContent(html_7281b1d97d192d492a12727724baf080);
+            
+        
+
+        poly_line_d9de7b38cb464e50bc459d1e34c11a08.bindPopup(popup_57c84e548f1b72ada6bb26daf66d9a94)
+        ;
+
+        
+    
+    
+            var poly_line_a5624456c5e13a6dcb6dcf9ad9a97f3b = L.polyline(
+                [[41.41394267984579, 2.1037516132834], [41.377787134167164, 2.1322970643161385]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2.318}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_3f7c266b503c291f63080ea611113e0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2aa24e2fa7f88103300a3068f4f6de16 = $(`<div id="html_2aa24e2fa7f88103300a3068f4f6de16" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Hotel Barcelona Palace → Recycling Center North<br>             Waste Type: paper<br>             Volume: 1,318 kg<br>             Distance: 4.7 km<br>             Cost: €12,323.30             </div>`)[0];
+                popup_3f7c266b503c291f63080ea611113e0b.setContent(html_2aa24e2fa7f88103300a3068f4f6de16);
+            
+        
+
+        poly_line_a5624456c5e13a6dcb6dcf9ad9a97f3b.bindPopup(popup_3f7c266b503c291f63080ea611113e0b)
+        ;
+
+        
+    
+    
+            var poly_line_fd57197db08e42c39f5ebae0a7176a7b = L.polyline(
+                [[41.37204406220407, 2.1883898525813863], [41.36022102765199, 2.1569890950956006]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.877}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_65e303d87dedea56c0e60326d01602ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ffc4ad3ea45a37d23df5f48b1846cf3 = $(`<div id="html_1ffc4ad3ea45a37d23df5f48b1846cf3" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Hotel Montjuic → Organic Waste Facility<br>             Waste Type: paper<br>             Volume: 877 kg<br>             Distance: 2.9 km<br>             Cost: €5,139.22             </div>`)[0];
+                popup_65e303d87dedea56c0e60326d01602ac.setContent(html_1ffc4ad3ea45a37d23df5f48b1846cf3);
+            
+        
+
+        poly_line_fd57197db08e42c39f5ebae0a7176a7b.bindPopup(popup_65e303d87dedea56c0e60326d01602ac)
+        ;
+
+        
+    
+    
+            var poly_line_46a14a4647fd49d28348aa302f8287db = L.polyline(
+                [[41.439217956770484, 2.1130408248944126], [41.377787134167164, 2.1322970643161385]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.435}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_1868914ac658d6d974a11d3fa6e76a65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d91568234609d58c62e937b315a65fed = $(`<div id="html_d91568234609d58c62e937b315a65fed" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Cafe Central → Recycling Center North<br>             Waste Type: paper<br>             Volume: 435 kg<br>             Distance: 7.0 km<br>             Cost: €6,103.05             </div>`)[0];
+                popup_1868914ac658d6d974a11d3fa6e76a65.setContent(html_d91568234609d58c62e937b315a65fed);
+            
+        
+
+        poly_line_46a14a4647fd49d28348aa302f8287db.bindPopup(popup_1868914ac658d6d974a11d3fa6e76a65)
+        ;
+
+        
+    
+    
+            var poly_line_561426be09bea8557a919c1afa75f67e = L.polyline(
+                [[41.35265359696839, 2.1298256476029973], [41.36022102765199, 2.1569890950956006]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.204}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_cf5c38b316b64f85e1f637379ff8e743 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd4d902b09d5b57ae2f80dd17b30c42b = $(`<div id="html_cd4d902b09d5b57ae2f80dd17b30c42b" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Hotel Eixample → Organic Waste Facility<br>             Waste Type: paper<br>             Volume: 204 kg<br>             Distance: 2.4 km<br>             Cost: €987.36             </div>`)[0];
+                popup_cf5c38b316b64f85e1f637379ff8e743.setContent(html_cd4d902b09d5b57ae2f80dd17b30c42b);
+            
+        
+
+        poly_line_561426be09bea8557a919c1afa75f67e.bindPopup(popup_cf5c38b316b64f85e1f637379ff8e743)
+        ;
+
+        
+    
+    
+            var poly_line_59877caa4c45091ef2ba393292f1b007 = L.polyline(
+                [[41.4236471214164, 2.2015049231134367], [41.43058192518328, 2.204720909248234]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 1.129}
+            ).addTo(map_a0cd0ba306e6dcbe4b6ab76b6c01cd5e);
+        
+    
+        var popup_dd967055d9a3d85907e1eb312e9d8b00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aff7def9150e0133803b6fd37ab6dc01 = $(`<div id="html_aff7def9150e0133803b6fd37ab6dc01" style="width: 100.0%; height: 100.0%;">             <b>Waste Flow</b><br>             Hotel Gothic Quarter → Central Waste Processing Plant<br>             Waste Type: paper<br>             Volume: 129 kg<br>             Distance: 0.8 km<br>             Cost: €210.27             </div>`)[0];
+                popup_dd967055d9a3d85907e1eb312e9d8b00.setContent(html_aff7def9150e0133803b6fd37ab6dc01);
+            
+        
+
+        poly_line_59877caa4c45091ef2ba393292f1b007.bindPopup(popup_dd967055d9a3d85907e1eb312e9d8b00)
+        ;
+
+        
+    
+</script>
+</html>
